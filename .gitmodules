@@ -1,3 +1,8 @@
 [submodule "my-portfolio-backend"]
 	path = my-portfolio-backend
 	url = git@github.com:beamingboy/my-portfolio-backend.git
+
+[submodule "my-portfolio-frontend"]
+	path = my-portfolio-frontend
+	url = git@github.com:beamingboy/my-portfolio-frontend.git
+
