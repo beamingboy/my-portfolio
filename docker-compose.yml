@@ -3,7 +3,7 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./backend
+      context: ./my-portfolio-backend
     volumes:
       - ./backend:/code
     ports:
@@ -19,9 +19,9 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./my-portfolio-frontend
     volumes:
-      - ./frontend:/app
+      - ./my-portfolio-frontend:/app
     ports:
       - "3000:3000"
 
