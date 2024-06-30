@@ -5,7 +5,7 @@ services:
     build:
       context: ./my-portfolio-backend
     volumes:
-      - ./backend:/code
+      - ./my-portfolio-backend:/code
     ports:
       - "8000:8000"
     depends_on:
