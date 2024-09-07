@@ -1,13 +1,18 @@
-from rest_framework import generics
+from rest_framework import generics # type: ignore
 from blog.models import Post
 from .serializers import PostSerializer
 
-
-class PostList(generics.ListCreateAPIView):
-    queryset = Post.postobjects.all()
+# Post API's for Admin Only
+class CreateBlog(generics.CreateAPIView):
+    queryset = Post.PostObjects
     serializer_class = PostSerializer
-    pass
+
+# Get API's for react
+class GetList(generics.ListAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
 
 
-class PostDetail(generics.RetrieveDestroyAPIView):
-    pass
+class GetBlog(generics.RetrieveAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer

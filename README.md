@@ -14,11 +14,11 @@ This project consists of a Django backend and a React frontend, containerized us
 
 ```
 my-portfolio/
-├── my-portfolio-backend/
+├── backend/
 │ ├── Dockerfile
 │ ├── django_project/
 │ └── requirements.txt
-├── my-portfolio-frontend/
+├──frontend/
 │ ├── Dockerfile
 │ │ ├── src/
 │ │ ├── public/
@@ -38,15 +38,7 @@ my-portfolio/
 
    ```
 
-2. Initialize Submodules
-
-    ```sh
-    git submodule init
-    git submodule update
-
-    ```
-
-3. Build and Run Docker Containers
+2. Build and Run Docker Containers
 
     ```
     docker-compose up --build
