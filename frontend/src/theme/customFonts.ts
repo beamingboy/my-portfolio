@@ -1,6 +1,5 @@
-
 const customFonts = {
-    // Titles
+	// Titles
 	h1: {
 		fontFamily: 'poppins',
 		fontWeight: '600',
@@ -25,26 +24,26 @@ const customFonts = {
 	// body1 is the Medium in the style guide
 	body1: {
 		fontFamily: 'poppins',
-		fontWeight: 400, // regular
+		fontWeight: 400,
 		fontSize: '28px',
 	},
 	body2: {
 		fontFamily: 'poppins',
-		fontWeight: 400, // regular
+		fontWeight: 400,
 		fontSize: '24px',
 	},
 	body3: {
 		fontFamily: 'poppins',
-		fontWeight: 400, // regular
+		fontWeight: 400,
 		fontSize: '20px',
 	},
 	body4: {
-		fontFamily: 'Inter',
-		fontWeight: 'regular',
+		fontFamily: 'poppins',
+		fontWeight: 400,
 		fontSize: '18px',
 	},
 	// caption is the xs in the style guide
-	caption: {fontFamily: 'Inter',fontWeight: 'regular',fontSize: '12px',                                                    },
-	// ... other typography definitions
+	caption: { fontFamily: 'Inter', fontWeight: 'regular', fontSize: '12px' },
 };
+
 export default customFonts;
