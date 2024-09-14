@@ -7,7 +7,7 @@ function App() {
 	return (
 		<>
 			<ThemeProvider theme={theme}>
-				<Typography variant="h4">Vinay Kumar </Typography>
+				<Typography variant="body3">Vinay Kumar </Typography>
 				<CustomButton text="Outlined Button" />
 				<Typography variant="body1">Vinay Kumar </Typography>
 
