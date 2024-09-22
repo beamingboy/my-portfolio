@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typography } from "@mui/material"; // Import MUI Typography
 import CustomButton from '../CustomButton';
 import './navbar.css'; // Import custom CSS
@@ -8,13 +8,43 @@ const Sections = ['HOME', 'ABOUT', 'PORTFOLIO', 'BLOG', 'CONTACT'];
 
 export function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [navBackground, setNavBackground] = useState('transparent');
 
     const handleToggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+            const currentWidth = window.innerWidth
+
+            // Check for screen width first
+            if (currentWidth < 850) {
+                setNavBackground(theme.palette.bg.main);
+            }
+            else if (currentScroll > 50) {
+                setNavBackground(theme.palette.bg.main);
+            }
+            else {
+                setNavBackground('transparent');
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll);
+        };
+    }, [theme.palette.bg.main]);
 
     return (
-        <nav className="custom-nav">
+        <nav
+            className="custom-nav"
+            style={{
+                backgroundColor: navBackground,
+                transition: 'background-color 0.3s ease', // Smooth transition effect
+            }}
+        >
             <div className="nav-container">
                 <Typography variant="logo" color={theme.palette.orange.contrastText}>
                     VINAY

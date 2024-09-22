@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { ThemeProvider } from '@mui/material';
 import theme from './theme';
-import { Navbar, CustomCursor, HomeSection, AboutSection } from "./components";
+import { Navbar, CustomCursor, HomeSection, AboutSection, PortfolioSection } from "./components";
 
 function App() {
 	return (
@@ -11,7 +11,7 @@ function App() {
 				<Navbar />
 				<HomeSection />
 				<AboutSection />
-
+				<PortfolioSection />
 			</ThemeProvider>
 
 		</>

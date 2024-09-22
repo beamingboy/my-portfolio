@@ -1,6 +1,5 @@
 /* Base Styling for the Navbar */
 .custom-nav {
-    background-color: #33333350;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -81,8 +80,8 @@
         top: 100px;
         left: -1000%;
         flex-direction: column;
+        background-color: #19191C;
         width: 100%;
-        background-color: #333;
         text-align: left;
         transition: all 0.3s ease;
     }
