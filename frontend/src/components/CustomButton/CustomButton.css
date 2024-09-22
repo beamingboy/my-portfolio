@@ -1,0 +1,53 @@
+/* Custom button with a unique prefix */
+.custom-button-home {
+  position: relative;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 100;
+  transition: color 0.3s ease;
+}
+
+.custom-button-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f75023;
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.custom-button-home:hover::before {
+  top: -100%;
+}
+
+/* Slide-in version */
+.custom-button-home-slide-in {
+  position: relative;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.custom-button-home-slide-in::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f75023;
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.custom-button-home-slide-in:hover::before {
+  top: 0;
+}

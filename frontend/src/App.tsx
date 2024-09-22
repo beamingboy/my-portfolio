@@ -1,18 +1,19 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { ThemeProvider, Typography } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import theme from './theme';
-import { CustomButton } from "./components";
+import { Navbar, CustomCursor, HomeSection, AboutSection } from "./components";
 
 function App() {
 	return (
 		<>
+			<CustomCursor />
 			<ThemeProvider theme={theme}>
-				<Typography variant="body3">Vinay Kumar </Typography>
-				<CustomButton text="Outlined Button" />
-				<Typography variant="body1">Vinay Kumar </Typography>
+				<Navbar />
+				<HomeSection />
+				<AboutSection />
 
 			</ThemeProvider>
-			`
+
 		</>
 	);
 }
