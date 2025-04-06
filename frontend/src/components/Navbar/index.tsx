@@ -35,7 +35,7 @@ export function Navbar() {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleScroll);
         };
-    }, [theme.palette.bg.main]);
+    }, []);
 
     return (
         <nav
