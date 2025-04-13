@@ -6,7 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import Grid from '@mui/material/Grid2';
 import CustomButton from '../CustomButton';
 import cover from '../../images/lg-hero-bg.jpg';
-import profileimg from '../../images/hero-image.png';
+import profileimg from '../../images/hero-image1.png';
 import theme from '../../theme'; // Assuming you're using a theme
 import { accesslinks } from '../../utils/links';
 
